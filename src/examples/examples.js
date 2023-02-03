@@ -1,11 +1,11 @@
-const barSchema = {
+export const barSchema = {
   name: 'string',
   address: 'string',
   drinks: 'object',
 };
 
 // Validates true
-const barObj = {
+export const barObj = {
   name: 'Jimmys drinks',
   address: 'Somewhere over the rainbow',
   drinks: {
@@ -14,7 +14,7 @@ const barObj = {
 };
 
 // Validates false
-const barObjF = {
+export const barObjF = {
   name: 'Sjonnies',
   address: 'Centrum 001',
   drinks: [ // < No object
@@ -22,7 +22,7 @@ const barObjF = {
   ]
 };
 
-const carSchema = {
+export const carSchema = {
   brand: 'string',
   type: 'string',
   milage: 'number',
@@ -30,7 +30,7 @@ const carSchema = {
 };
 
 // Validates true
-const carObj = {
+export const carObj = {
   brand: 'Mazda',
   type: 'MX5 NB 1.8',
   milage: 199999.99,
@@ -40,7 +40,7 @@ const carObj = {
 };
 
 // Validates false
-const carObjF = {
+export const carObjF = {
   brand: 'BMW',
   type: '335',
   milage: '100000', // < No number
@@ -50,7 +50,7 @@ const carObjF = {
   ],
 };
 
-const personSchema = {
+export const personSchema = {
   name: 'string',
   age: 'number',
   siblings: 'array',
@@ -59,7 +59,7 @@ const personSchema = {
 };
 
 // Validates true
-const personObj = {
+export const personObj = {
   name: 'James',
   age: 25,
   siblings: ['Johnnathan'],
@@ -68,7 +68,7 @@ const personObj = {
 };
 
 // Validates false
-const personObjF = {
+export const personObjF = {
   name: 'James',
   age: 25,
   active: true,
